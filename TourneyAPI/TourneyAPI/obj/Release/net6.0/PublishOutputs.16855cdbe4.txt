@@ -1,0 +1,15 @@
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.exe
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.deps.json
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.runtimeconfig.json
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.dll.config
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\TourneyAPI.pdb
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\NLog.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
