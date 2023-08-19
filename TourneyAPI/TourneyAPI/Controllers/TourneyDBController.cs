@@ -8,18 +8,30 @@ namespace TourneyAPI.Controllers
     [ApiController]
     [Produces("application/json")]
     [Route("api/main")]
-    public class MainController : Controller
+    public class TourneyDBController : Controller
     {
 
+        private readonly IConfiguration _configuration;
+
+        public TourneyDBController(IConfiguration iConfig)
+        {
+            _configuration = iConfig;
+        }
 
         [HttpPost]
         [Route("post")]
         [EnableCors("DefaultPolicy")]
         public JsonResult addUser([FromBody] UserEntry userModel)
         {
+            //Assign model
             var user = userModel;
 
-            return new JsonResult(user.AddUser()) ;
+            bool validSteamUser = false;
+            bool validDiscordUser = false;
+
+
+
+            return new JsonResult(user.AddUser(_configuration)) ;
         }
 
 

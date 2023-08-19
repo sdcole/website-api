@@ -14,27 +14,26 @@ namespace TourneyAPI.Model
         public string steamID { get;set;}
         public string discordID { get; set; }
 
-        private string key;
+        private string steamKey;
 
         private IConfiguration configuration;
-
-        public void UserController(IConfiguration iConfig)
-        {
-            configuration = iConfig;
-        }
 
         public UserEntry(string steamID,string discordID)
         {
             this.steamID = steamID; 
             this.discordID = discordID;
-            this.key = configuration.GetSection("ConfigSettings").GetSection("SteamKey").Value;
+            this.steamKey = null;
         }
-        public string AddUser()
+        public string AddUser(IConfiguration configuration)
         {
             UserEntryResponse response = new UserEntryResponse();
+            //sets config
+            this.configuration = configuration;
+
+            steamKey = configuration.GetSection("ConfigSettings").GetSection("SteamKey").Value;
             //Calls steam
             using var client = new WebClient();
-            string result = client.DownloadString("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + key + "&steamids=" + steamID);
+            string result = client.DownloadString("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + steamKey + "&steamids=" + steamID);
 
             JObject jObj = JObject.Parse(result);
 
