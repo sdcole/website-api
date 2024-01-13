@@ -33,7 +33,7 @@ namespace TourneyAPI.Model
         [JsonProperty("discordAvatar")]
         public string discordAvatar { get; set; }
 
-
+        public bool success { get; set; }
 
 
         public UserEntryResponse()
@@ -49,6 +49,7 @@ namespace TourneyAPI.Model
             this.discordGlobalName = string.Empty;
             this.discordAvatar = string.Empty;
 
+            this.success = false;
             
 
 

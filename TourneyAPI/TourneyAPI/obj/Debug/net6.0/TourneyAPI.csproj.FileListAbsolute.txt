@@ -99,3 +99,9 @@ C:\Users\saeba\OneDrive\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\D
 C:\Users\saeba\OneDrive\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\TourneyAPI.pdb
 C:\Users\saeba\OneDrive\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\TourneyAPI.genruntimeconfig.cache
 C:\Users\saeba\OneDrive\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\ref\TourneyAPI.dll
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\TourneyAPI.sourcelink.json
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\staticwebassets\msbuild.TourneyAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.TourneyAPI.props
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TourneyAPI.props
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TourneyAPI.props
+C:\Users\saeba\Documents\Github\website-api\TourneyAPI\TourneyAPI\obj\Debug\net6.0\staticwebassets.pack.json

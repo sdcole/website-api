@@ -50,6 +50,7 @@ namespace TourneyAPI.Controllers
             steamKey = _configuration.GetSection("ConfigSettings").GetSection("SteamKey").Value;
 
             string result = client.DownloadString("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=" + steamKey + "&steamids=" + userModel.steamID);
+            response.steamID = userModel.steamID;
 
             jObj = JObject.Parse(result);
 
@@ -109,7 +110,7 @@ namespace TourneyAPI.Controllers
                 {
                     var conn = new NpgsqlConnection(_configuration.GetSection("ConfigSettings").GetSection("DbConnection").Value);
                     conn.Open();
-                    var cmd = new NpgsqlCommand("INSERT INTO player(steam_ID, discord_ID, steam_name, steam_avatar) VALUES (:steamID, :discordID, :steamName, :steamAvatar, :discordUserName, :discordAvatar);", conn);
+                    var cmd = new NpgsqlCommand("INSERT INTO player(steam_ID, discord_ID, steam_name, steam_avatar, discord_user_name, discord_avatar) VALUES (:steamID, :discordID, :steamName, :steamAvatar, :discordUserName, :discordAvatar);", conn);
 
                     var sID = cmd.Parameters.Add(":steamID", NpgsqlTypes.NpgsqlDbType.Varchar);
                     var dID = cmd.Parameters.Add(":discordID", NpgsqlTypes.NpgsqlDbType.Varchar);
@@ -128,7 +129,7 @@ namespace TourneyAPI.Controllers
 
                     cmd.ExecuteNonQuery();
                     conn.Close();
-                    success = true;
+                    response.success = true;
                 }
                 catch 
                 {
@@ -138,7 +139,7 @@ namespace TourneyAPI.Controllers
             #endregion
 
             JsonResult returnResponse;
-            if (success)
+            if (response.success)
             {
                 returnResponse = new JsonResult(response);
                 returnResponse.StatusCode = (int)HttpStatusCode.OK;
